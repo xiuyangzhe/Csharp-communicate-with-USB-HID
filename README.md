@@ -1,6 +1,6 @@
 # C# communicate with USB-HID
 Following these steps  
-1.In your project open nuget, search and install Hid.Net,Usb.Net  
+1.In your project open `nuget`, search and install `Hid.Net`,`Usb.Net` (Device.Net will auto installed)  
 2.Init device  
 ```c#
             uint vid = 0x0483, pid = 0xA19B;
