@@ -45,11 +45,6 @@ Following these steps
                 0x55,0xAA,0x04,0x04,0xFF,0x01,0x01
             };
 
-            var buffer = new byte[64];
-            buffer[0] = 0x3f;
-            buffer[1] = 0x23;
-            buffer[2] = 0x23;
-
             //Write the data to the device
             await trezorDevice.WriteAsync(pa4);
         }
