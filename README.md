@@ -1,7 +1,7 @@
 # C# communicate with USB-HID
-Follow these steps
-1.in your project open nuget, search and install Hid.Net,Usb.Net 
-2.Init device
+Follow these steps  
+1.in your project open nuget, search and install Hid.Net,Usb.Net  
+2.Init device  
 ```c#
             uint vid = 0x0483, pid = 0xA19B;
             //Register the factories for creating Usb devices. This only needs to be done once.
@@ -27,7 +27,7 @@ Follow these steps
             }
             await trezorDevice.InitializeAsync();
 ```
-3.write info to device
+3.write info to device  
 ```c#
             //Get the first available device and connect to it
             var devices = await DeviceManager.Current.GetDevicesAsync(deviceDefinitions);
@@ -55,7 +55,7 @@ Follow these steps
             await trezorDevice.WriteAsync(pa4);
         }
  ```
- 4. read info from device
+ 4. read info from device  
  ```c#
              //Read the response
             var readBuffer = await trezorDevice.ReadAsync();
