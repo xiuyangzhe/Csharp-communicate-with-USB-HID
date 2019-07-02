@@ -12,8 +12,7 @@ Following these steps
             var deviceDefinitions = new List<FilterDeviceDefinition>
             {
                 new FilterDeviceDefinition{ DeviceType= DeviceType.Hid, VendorId= vid, ProductId=pid },
-                //new FilterDeviceDefinition{ DeviceType= DeviceType.Usb, VendorId= vid, ProductId=pid },
-                //new FilterDeviceDefinition{ DeviceType= DeviceType.Usb, VendorId= 0x1209, ProductId=0x53C0, Label="Model T" }
+                //new FilterDeviceDefinition{ DeviceType= DeviceType.Usb, VendorId= vid, ProductId=pid }
             };
 
             //Get the first available device and connect to it
